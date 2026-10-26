@@ -146,6 +146,85 @@ node test/calculator.test.js
 
 ---
 
+## ☁️ 24/7 Cloud Deployment Guide (Render.com / Railway)
+
+Follow these steps to deploy the application to a permanent public link (`https://mk-enterprises.onrender.com`) that stays online 24/7 even when local shop computers are completely powered off.
+
+### Step 1: Push Code to a Private GitHub Repository
+
+1. Open your terminal or shell in this project directory:
+   ```bash
+   cd /home/arun/Documents/others.project
+   ```
+2. Verify git status:
+   ```bash
+   git status
+   ```
+3. Create a new **Private Repository** on [GitHub](https://github.com/new) named `mk-enterprises-billing`.
+4. Link your local project to your GitHub repository:
+   ```bash
+   git remote add origin https://github.com/<YOUR-GITHUB-USERNAME>/mk-enterprises-billing.git
+   git branch -M main
+   git push -u origin main
+   ```
+
+---
+
+### Step 2: Deploy to Render.com (Free Tier)
+
+#### Method A: 1-Click Blueprint Deploy (Recommended)
+Because the project contains a preconfigured [`render.yaml`](file:///home/arun/Documents/others.project/render.yaml):
+1. Sign up or log into [Render.com](https://render.com).
+2. Click **New +** in the top right and select **Blueprint**.
+3. Connect your GitHub account and select your `mk-enterprises-billing` repository.
+4. Render will automatically read `render.yaml` and configure:
+   - **Environment:** Node.js
+   - **Build Command:** `npm install && npm run build`
+   - **Start Command:** `npm start`
+   - **Health Check Path:** `/health`
+   - **Host Binding:** `0.0.0.0`
+5. Click **Apply**. Within 2-3 minutes, your live URL will be active (e.g. `https://mk-enterprises.onrender.com`).
+
+#### Method B: Manual Web Service Setup
+1. On the Render Dashboard, click **New +** > **Web Service**.
+2. Select your `mk-enterprises-billing` repository.
+3. Configure the settings:
+   - **Name:** `mk-enterprises`
+   - **Region:** `Singapore` (Fastest for India / Telangana)
+   - **Runtime:** `Node`
+   - **Build Command:** `npm install && npm run build`
+   - **Start Command:** `npm start`
+   - **Plan:** `Free`
+4. Expand **Advanced** settings:
+   - **Health Check Path:** `/health`
+   - Add Environment Variable:
+     - `HOST` = `0.0.0.0`
+5. Click **Create Web Service**.
+
+---
+
+### Step 3: Keeping the Free Tier Awake 24/7 (Prevent Sleep)
+
+Render's free tier spins down after 15 minutes of inactivity. To keep your app responsive and awake 24/7:
+1. Go to [UptimeRobot.com](https://uptimerobot.com) or [Cron-job.org](https://cron-job.org) (both 100% free).
+2. Click **Add New Monitor**:
+   - **Monitor Type:** `HTTP(s)`
+   - **Friendly Name:** `M.K. Enterprises Health Ping`
+   - **URL:** `https://<YOUR-APP-NAME>.onrender.com/health`
+   - **Monitoring Interval:** `Every 5 minutes`
+3. Save the monitor. This continuously pings the lightweight `/health` route, ensuring zero cold-starts and 24/7 instant loading!
+
+---
+
+### Step 4: Persistent Disk Setup (Never Lose Data on Restart)
+
+For permanent cloud persistence across server reboots:
+- On Render (Starter tier): Click **Disks** > **Add Disk**, set mount path to `/var/data`, and add environment variable `DATA_DIR=/var/data`.
+- On Railway: Simply add a Volume and set mount path to `/app/server/data`.
+- In-App Backup: The system also includes 1-click **Download Complete Backup (.ZIP)** and daily automated 11:59 PM snapshots inside the Admin Portal.
+
+---
+
 ## 🏢 Business Profile Reference
 - **Name:** M.K. ENTERPRISES
 - **Phone Numbers:** +91 9766550152 / +91 9515018304
