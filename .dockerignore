@@ -7,3 +7,4 @@ dist
 server/backups/*.zip
 server/backups/*.json
 test/*.log
+

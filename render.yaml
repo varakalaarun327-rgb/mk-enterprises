@@ -20,3 +20,4 @@ services:
       name: mk-data
       mountPath: /var/data
       sizeGB: 1
+
