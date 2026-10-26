@@ -1,0 +1,54 @@
+[
+  {
+    "id": "PAY-1793035802731",
+    "receiptNumber": "RCP-2731",
+    "customerId": "CUST-2725",
+    "customerName": "arun kumar",
+    "invoiceId": "INV-1793035802727",
+    "invoiceNumber": "MK-2702",
+    "date": "2026-10-26",
+    "amount": 2500,
+    "paymentMode": "Bank Transfer",
+    "paymentRef": "",
+    "notes": "Payment recorded on invoice creation"
+  },
+  {
+    "id": "PAY-1001",
+    "receiptNumber": "RCP-2601",
+    "customerId": "CUST-001",
+    "customerName": "Sri Venkateshwara Builders (V. Rao)",
+    "invoiceId": "INV-2026-001",
+    "invoiceNumber": "MK-2601",
+    "date": "2026-10-18",
+    "amount": 20000,
+    "paymentMode": "UPI",
+    "paymentRef": "UPI/62918294/PhonePe",
+    "notes": "Advance payment for Balcony Front Railing"
+  },
+  {
+    "id": "PAY-1002",
+    "receiptNumber": "RCP-2602",
+    "customerId": "CUST-002",
+    "customerName": "Ramesh Reddy (Villa Project)",
+    "invoiceId": "INV-2026-002",
+    "invoiceNumber": "MK-2602",
+    "date": "2026-10-21",
+    "amount": 28320,
+    "paymentMode": "Bank Transfer",
+    "paymentRef": "NEFT-SBI-4910284",
+    "notes": "Full bill clearance"
+  },
+  {
+    "id": "PAY-1003",
+    "receiptNumber": "RCP-2603",
+    "customerId": "CUST-004",
+    "customerName": "Mohammed Farooq",
+    "invoiceId": "INV-2026-003",
+    "invoiceNumber": "MK-2603",
+    "date": "2026-10-24",
+    "amount": 10000,
+    "paymentMode": "Cash",
+    "paymentRef": "Cash received by store manager",
+    "notes": "Initial deposit for Shopfront 12mm glass"
+  }
+]

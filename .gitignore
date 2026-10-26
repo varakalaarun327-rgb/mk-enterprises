@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Production build (Render builds this with npm run build)
+dist/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+
+# Temporary backup archives (keep repository size small)
+server/backups/*.zip
+server/backups/*.json
+!server/backups/.gitkeep

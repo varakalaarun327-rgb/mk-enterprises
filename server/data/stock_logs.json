@@ -1,0 +1,58 @@
+[
+  {
+    "id": "STK-1793035802733-253",
+    "date": "2026-10-26",
+    "type": "OUTWARD_BILL",
+    "itemId": "INV-105",
+    "itemName": "5mm Frosted / Etching Glass Blank",
+    "quantity": 28,
+    "unit": "Sq. Ft",
+    "vendor": "arun kumar",
+    "costPrice": 75,
+    "totalCost": 2100,
+    "refNumber": "MK-2702",
+    "notes": "Auto deducted for invoice MK-2702 (5mm Frosted / Etching Glass Blank)"
+  },
+  {
+    "id": "STK-001",
+    "date": "2026-10-15",
+    "type": "INWARD",
+    "itemId": "INV-101",
+    "itemName": "12mm Toughened Clear Glass",
+    "quantity": 500,
+    "unit": "Sq. Ft",
+    "vendor": "Saint-Gobain Glass India / Asahi Float Depot",
+    "costPrice": 145,
+    "totalCost": 72500,
+    "refNumber": "SG-BL-9402",
+    "notes": "Container lot delivered safely at warehouse"
+  },
+  {
+    "id": "STK-002",
+    "date": "2026-10-18",
+    "type": "OUTWARD_BILL",
+    "itemId": "INV-101",
+    "itemName": "12mm Toughened Clear Glass",
+    "quantity": 72,
+    "unit": "Sq. Ft",
+    "vendor": "Customer Project",
+    "costPrice": 145,
+    "totalCost": 10440,
+    "refNumber": "MK-2601",
+    "notes": "Deducted for Invoice MK-2601 (Sri Venkateshwara Builders)"
+  },
+  {
+    "id": "STK-003",
+    "date": "2026-10-20",
+    "type": "WASTAGE_BREAKAGE",
+    "itemId": "INV-104",
+    "itemName": "5mm Plain Float Glass",
+    "quantity": 24,
+    "unit": "Sq. Ft",
+    "vendor": "Internal Wastage",
+    "costPrice": 52,
+    "totalCost": 1248,
+    "refNumber": "WST-26-01",
+    "notes": "Corner hairline crack during site transport trimming"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "businessName": "M.K. ENTERPRISES",
+  "tagline": "Glass & Aluminium Specialists - Complete Architectural Solutions",
+  "phones": [
+    "+91 9766550152",
+    "+91 9515018304"
+  ],
+  "address": "Shadnagar Road, PARGI, Vikarabad Dist. - 501 501",
+  "state": "Telangana",
+  "stateCode": "36",
+  "gstin": "36ABCDE1234F1Z5",
+  "email": "mkenterprises.pargi@gmail.com",
+  "bankName": "State Bank of India",
+  "accountName": "M.K. ENTERPRISES",
+  "accountNumber": "39485720194",
+  "ifscCode": "SBIN0020184",
+  "branch": "Pargi Main Branch",
+  "upiId": "9766550152@upi",
+  "services": [
+    "Digital Glass",
+    "Etching Glass",
+    "Tuffen Glass (Toughened Glass)",
+    "Railing Glass Design",
+    "UPVC & Aluminium Work",
+    "Mirror & Decorative Glass",
+    "Shower Enclosures",
+    "Spider Glazing & Patch Fittings"
+  ],
+  "terms": [
+    "1. 50% advance payment required upon order confirmation.",
+    "2. Balance payment must be settled upon delivery or before installation.",
+    "3. Glass once cut, polished, or toughened cannot be altered or returned.",
+    "4. Measurements approved by customer will be final for fabrication.",
+    "5. Goods once dispatched/installed are non-returnable. Breakage during external handling is not covered."
+  ]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "CUST-2725",
+    "name": "arun kumar",
+    "phone": "7993065401q",
+    "address": "hyderabad",
+    "notes": "Created via billing",
+    "createdAt": "2026-10-26T17:30:02.725Z"
+  },
+  {
+    "id": "CUST-001",
+    "name": "Sri Venkateshwara Builders (V. Rao)",
+    "phone": "9848012345",
+    "address": "Royal City Layout, Near RTO Office, Pargi",
+    "notes": "Regular residential apartments contractor",
+    "createdAt": "2026-09-15T10:00:00.000Z"
+  },
+  {
+    "id": "CUST-002",
+    "name": "Ramesh Reddy (Villa Project)",
+    "phone": "9440187654",
+    "address": "Plot 42, Shadnagar Bypass Road, Pargi",
+    "notes": "Premium railing glass and soundproof UPVC windows",
+    "createdAt": "2026-09-28T14:30:00.000Z"
+  },
+  {
+    "id": "CUST-003",
+    "name": "Modern Interiors & Architects",
+    "phone": "9988776655",
+    "address": "Opp. Bus Station, Vikarabad Town",
+    "notes": "Commercial office partitions and etching designs",
+    "createdAt": "2026-10-02T11:15:00.000Z"
+  },
+  {
+    "id": "CUST-004",
+    "name": "Mohammed Farooq",
+    "phone": "9700112233",
+    "address": "Gunj Road, Near Masjid, Pargi",
+    "notes": "Shopfront 12mm toughened glass with patch fittings",
+    "createdAt": "2026-10-10T16:00:00.000Z"
+  }
+]
